@@ -8,7 +8,9 @@ import { Tag } from 'src/app/shared/models/Tags';
 export class FoodService {
 
   constructor() { }
-
+getFoodById(id:number) : Foods{
+ return this.getall().find(item=> item.id == id)!;
+}
   getall() : Foods[]{
     return[
      {
