@@ -15,22 +15,22 @@
      size = "24px"
       [readonly] = "true">
     </star-rating>
+    <div class="origins">
+      <span *ngFor = "let o of food.origins">{{o}}</span>
+    </div>
+    <div class="tag">
+      <app-tags [foodPageTags]="food.tags" justifyContent = "start"></app-tags>
+    </div>
+    <div class="cook-time">
+      <span>
+        Time to cook about <strong>{{food.cookTime}}</strong>Minutes
+      </span>
+    </div>
+    <div class="price">
+      <span>
+        {{food.price | currency}}
+      </span>
+    </div>
+    <button (click)="addToCart()">Add to Cart</button>
   </div>
-  <div class="origins">
-    <span *ngFor = "let o of food.origins">{{o}}</span>
-  </div>
-  <div class="tag">
-    <app-tags [foodPageTags]="food.tags"></app-tags>
-  </div>
-  <div class="cook-time">
-    <span>
-      Time to cook about <strong>{{food.cookTime}}</strong>Minutes
-    </span>
-  </div>
-  <div class="price">
-    <span>
-      {{food.price | currency}}
-    </span>
-  </div>
-  <button>Add to Cart</button>
 </div>
