@@ -19,18 +19,18 @@ getFoodById(id:number) : Foods{
        price: 9,
        cookTime : '40 - 50',
        favorite : true,
-       origins : ['pakistan'],
+       origins : ['Continental'],
        star : 1,
        imageUrl : '/assets/f1.jpg',
        tags: ['Itelian', 'Pasta', 'Lunch']
      },
      {
        id: 2,
-       name: 'Chinese chowmin',
+       name: 'Checken Chowmin',
        price: 9,
-       cookTime : '40 - 50',
+       cookTime : '10 - 20',
        favorite : true,
-       origins : ['pakistan'],
+       origins : ['Chainese'],
        star : 2,
        imageUrl : '/assets/f2.jpg',
        tags: ['Itelian', 'Pasta', 'Lunch']
@@ -41,10 +41,10 @@ getFoodById(id:number) : Foods{
        price: 9,
        cookTime : '40 - 50',
        favorite : true,
-       origins : ['pakistan'],
+       origins : ['Pakistani'],
        star : 3,
        imageUrl : '/assets/f3.jpg',
-       tags: ['Itelian', 'Pasta', 'Lunch']
+       tags: ['Nuts']
      },
      {
        id: 4,
@@ -52,10 +52,10 @@ getFoodById(id:number) : Foods{
        price: 9,
        cookTime : '40 - 50',
        favorite : true,
-       origins : ['pakistan'],
+       origins : ['Chainese'],
        star : 4,
        imageUrl : '/assets/f4.jpg',
-       tags: ['Chinese', 'Chowmin', 'Lunch']
+       tags: ['Chinese', 'Dinner', 'Lunch']
      },
      {
        id: 5,
@@ -66,7 +66,7 @@ getFoodById(id:number) : Foods{
        origins : ['pakistan'],
        star : 5,
        imageUrl : '/assets/f5.jpg',
-       tags: ['Itelian', 'Pasta', 'Lunch']
+       tags: ['FastFood', 'Pasta', 'Lunch']
      },
      {
        id: 6,
@@ -107,7 +107,7 @@ getFoodById(id:number) : Foods{
 
   getAllFoodByTag(tag:string): Foods[]{
 
-    return tag == 'ALL'? this.getall(): this.getall().filter(food=>food.tags?.includes(tag));
+    return tag == 'All'? this.getall(): this.getall().filter(food=>food.tags?.includes(tag));
 
   }
   getAllTag(): Tag[]{

@@ -17,8 +17,8 @@ foods : Foods[]=[];
     this.router.params.subscribe(params => {
       if (params['searchItem'])
       this.foods = this.fs.getall().filter(food=>food.name.toLowerCase().includes(params['searchItem'].toLowerCase()));
-      else if(params['tag'])
-      this.foods = this.fs.getAllFoodByTag(params['tag']);
+      else if(params['tags'])
+      this.foods = this.fs.getAllFoodByTag(params['tags']);
       else
       this.foods = this.fs.getall();
     })
