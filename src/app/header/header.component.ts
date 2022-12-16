@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent implements OnInit {
-
+  isLoogedIn : boolean = false;
   constructor() { }
 
   ngOnInit(): void {

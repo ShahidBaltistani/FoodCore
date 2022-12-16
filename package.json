@@ -18,6 +18,8 @@
     "@angular/platform-browser": "~13.1.0",
     "@angular/platform-browser-dynamic": "~13.1.0",
     "@angular/router": "~13.1.0",
+    "@syncfusion/ej2-angular-grids": "^20.3.62",
+    "@syncfusion/ej2-material-theme": "^20.3.61",
     "bootstrap": "^5.2.3",
     "jquery": "^3.6.1",
     "ng-starrating": "^1.0.20",
